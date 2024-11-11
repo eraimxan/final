@@ -173,10 +173,7 @@ small {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
     font-weight: bold;
-    position: absolute;
-    top: 15px; /* Adjust this value as needed */
-    right: 15px; /* Move button to the right edge */
-    z-index: 10; /* Ensure it stays on top */
+    z-index: 10; /* Ensure the button stays on top */
 }
 
 /* Hover effect */
@@ -192,24 +189,24 @@ small {
     box-shadow: 0 0 0 3px var(--primary-color);
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
+/* Bootstrap Responsive Adjustments */
+
+/* For devices larger than 576px */
+@media (min-width: 576px) {
     #theme-toggle {
-        padding: 10px 20px;
-        font-size: 14px;
-        width: auto; /* Ensure the button adjusts based on content */
-        top: 15px; /* Keep the button positioned correctly in smaller screens */
+        font-size: 16px; /* Default font size for tablets and larger devices */
+        padding: 12px 24px; /* Standard padding */
     }
 }
 
-@media (max-width: 576px) {
+/* For devices with widths smaller than 576px */
+@media (max-width: 575px) {
     #theme-toggle {
-        font-size: 18px;
-        padding: 12px 30px;
-        top: 15px;
-        right: 10px; /* Slightly adjust right positioning on very small screens */
+        font-size: 14px; /* Slightly smaller font size for mobile screens */
+        padding: 10px 20px; /* Reduced padding for mobile screens */
     }
 }
+
 
 
 
