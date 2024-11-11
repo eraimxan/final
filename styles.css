@@ -165,21 +165,28 @@ small {
 /* Theme Toggle Button */
 #theme-toggle {
     background-color: var(--primary-color);
-    border: none;
-    color: white;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 50px; /* Rounded button */
     cursor: pointer;
     margin-top: 20px;
     display: block;
-    margin:auto;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: auto;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+    font-weight: bold; /* Make the text bold */
 }
 
 #theme-toggle:hover {
     background-color: var(--primary-hover-color);
-    transform: scale(1.05);
+    transform: scale(1.1);
+    color: var(--bg-color); /* Change text color on hover */
+}
+
+#theme-toggle:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--primary-color); /* Focus ring */
 }
 
 /* Responsive Layout */
