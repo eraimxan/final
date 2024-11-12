@@ -189,7 +189,6 @@ small {
     box-shadow: 0 0 0 3px var(--primary-color);
 }
 
-/* Bootstrap Responsive Adjustments */
 
 /* For devices larger than 576px */
 @media (min-width: 576px) {
@@ -238,8 +237,5 @@ small {
         font-size: 1.2rem;
     }
 
-    #theme-toggle {
-        width: 100%;
-        font-size: 18px;
-    }
+  
 }
